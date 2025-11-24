@@ -10,6 +10,33 @@ let questions = [
     ],
   },
   {
+    question: "Excelda Jadvaldagi qiymatlar orasidan eng kattasini topish funksiyasi qaysi?",
+    answer: "MAX()",
+    options: [
+      "SUMM()",
+      "MAX()",
+      "MIN()",
+    ],
+  },
+  {
+    question: "Word hujjatining standart kengaytmasi (format) qaysi?",
+    answer: ".docx",
+    options: [
+      ".docx",
+      ".xlsx",
+      ".pptx",
+    ],
+  },
+  {
+    question: "Ctrl + C qanday amalni bajaradi?",
+    answer: "Nusxalash",
+    options: [
+      "Kesish",
+      "Nusxalash",
+      "Joylashtrish",
+    ],
+  },
+  {
     question:
       "WORD matn redaktorida matnni yozish standartlariga ko’ra qaysi shrift turini qo’llash lozim ?",
     answer: "Times New Roman",
@@ -17,9 +44,21 @@ let questions = [
   },
   {
     question:
+      "Ctrl + X qanday amalni bajaradi?",
+    answer: "Kesish",
+    options: ["Kesish", "Nusxalash", "Joylashtrish"],
+  },
+  {
+    question:
       "WORD matn redaktorida yangi list yaratish uchun qaysi klavishlardan foydalaniladi?",
     answer: "Ctrl+Enter",
     options: ["Shift+Alt", "Ctrl+Tab", "Ctrl+Enter"],
+  },
+  {
+    question:
+      "Ctrl + V nimaga xizmat qiladi?",
+    answer: "Joylashtrish",
+    options: ["Nusxalash", "Kesish", "Joylashtrish"],
   },
   {
     numb: 4,
@@ -34,12 +73,24 @@ let questions = [
     answer: "К",
     options: ["Ж", "Ч", "К"],
   },
-  // {
-  //   question:
-  //     "Kerakli bo’lgan matnni nusxalash uchun qaysi klavishlardan foydalanish kerak ?",
-  //   answer: "Ctrl+C",
-  //   options: ["Ctrl+C", "Ctrl+L", "Ctrl+A"],
-  // },
+  {
+    question:
+      "Ctrl + Z qanday funksiyani bajaradi?",
+    answer: "Orqaga Qaytarish",
+    options: ["Orqaga Qaytarish", "O'chirish", "Markazlash"],
+  },
+  {
+    question:
+      "Ctrl + P qanday amalni bajaradi?",
+    answer: "Chop etish",
+    options: ["Chop etish", "Yozish", "Saqlash"],
+  },
+  {
+    question:
+      "Excel’da qator va ustun kesishgan joy qanday ataladi?",
+    answer: "Ячейка",
+    options: ["Ячейка", "Строка", "Столбец"],
+  },
   {
     question:
       "WORD matn redaktorida varaqni chegara atrofida rasmlar, maxsus bezaklarni o’rnatish uchun qaysi funktsiyadan foydalanish kerak ?",
@@ -57,18 +108,29 @@ let questions = [
     options: ["Vstavka", "Format", "Vid"],
   },
   {
+    question:
+      "Ctrl + A nimaga xizmat qiladi?",
+    answer: "Barcha matnni tanlash",
+    options: ["Barcha matnni tanlash", "Barcha matnni nusxalash", "Barcha matnni o'chirish"],
+  },
+  {
     question: "9)	Wordda shriftni tanlash qaysi menyuda ko`rsatilgan? ",
     answer: "Glavnaya",
     options: ["Fayl", "Vstavka", "Glavnaya"],
   },
   {
+    question: "Ctrl + F qanday amalni bajaradi? ",
+    answer: "Izlash",
+    options: ["Izlash", "Hujjatni saqlaydi", "O'chirish"],
+  },
+  {
     question:
-      "Matndagi belgilarni o`chirish qaysi tugmalar yordamida amalga oshiriladi?",
-    answer: "BackSpace va Delete tugmalari yordamida",
+      "Alt + Tab nima uchun ishlatiladi?",
+    answer: "Oynalarni almashtirish",
     options: [
-      "Shift tugmasi yordamida",
-      "Tab tugmasi yordamida",
-      "BackSpace va Delete tugmalari yordamida",
+      "Oynalarni almashtirish",
+      "Tilni almashtirish",
+      "Screenshot",
     ],
   },
   {
@@ -76,12 +138,18 @@ let questions = [
     answer: "Fayl - Soxranit",
     options: ["Fayl - Zakrit", "Fayl - Soxranit", "Fayl – Pechat"],
   },
-  // {
-  //   question:
-  //     "Word tahrirlagichi ishga tushganda kompyuterning o`zi faylga qanday nom beradi?",
-  //   answer: "Dokument 1",
-  //   options: ["Papka 1", "Dokument 1", "Vid"],
-  // },
+  {
+    question:
+      "Ctrl + K qaysi amal?",
+    answer: "Hyperlink qo‘yish",
+    options: ["Nusxalash", "Hyperlink qo‘yish", "Izlash"],
+  },
+  {
+    question:
+      "Shrift o‘lchamini o‘zgartirish qaysi joydan amalga oshiriladi?",
+    answer: "Главная → Шрифт",
+    options: ["Главная → Шрифт", "Вставка → Текст", "Вид → Масштаб"],
+  },
   {
     question: "[Delete] klavishasining vazifasi.",
     answer: "kursor (yurgich) dan o’ngdagin belgini o’chirish",
@@ -89,6 +157,15 @@ let questions = [
       "kursor (yurgich) dan o’ngdagin belgini o’chirish",
       "kursor (yurgich) dan chapdagin belgini o’chirish",
       "matn yoki berilganlarni kiritish",
+    ],
+  },
+  {
+    question: "Windows + Probel qanday vazifa bajaradi?",
+    answer: "Tilni almashtirish",
+    options: [
+      "Screenshot",
+      "Oynalarni almashtirish",
+      "Tilni almashtirish",
     ],
   },
   {
@@ -110,10 +187,40 @@ let questions = [
     ],
   },
   {
+    question: "Excel’da matnni bir nechta qatorga bo‘lish funksiyasi qaysi?.",
+    answer: "Перенос текста",
+    options: [
+      "Перенос текста",
+      "Сортировка",
+      "Вырезать",
+    ],
+  },
+  {
+    question: "Windows + Shift + S nima qiladi?",
+    answer: "Ekranning tanlangan qismini skrinshotga olish",
+    options: [
+      "Oynalarni almashtirish",
+      "Ekranning tanlangan qismini skrinshotga olish",
+      "Clipboardni ochadi",
+    ],
+  },
+  {
     question:
-      "Matnni yo’zayotganda keyingi satrga o’tish uchun qaysi tugmachadan foydalaniladi?",
+      "Matnni yozayotganda keyingi satrga o’tish uchun qaysi tugmachadan foydalaniladi?",
     answer: "Enter",
     options: ["Tab", "Enter", "Alt"],
+  },
+  {
+    question:
+      "Wordda sahifalarni raqamlash qaysi menyuda?",
+    answer: "Вставка → Номер страницы",
+    options: ["Вставка → Номер страницы", "Главная → Нумерация", "Разметка страницы → Нумерация"],
+  },
+  {
+    question:
+      "Wordda Matnning fon rangini o‘zgartirish qaysi buyruq bilan?",
+    answer: "Главная → Фон",
+    options: ["Главная → Фон", "Вставка → Текст", "Вид → Масштаб"],
   },
   {
     question: "! @ # $ % ^ & * ( ) belgilari qanday yoziladi?",
@@ -133,11 +240,11 @@ let questions = [
       "belgi o‘chiradi",
     ],
   },
-  // {
-  //   question: "Axborotning eng kichik o’lchov birligi?",
-  //   answer: "Bit",
-  //   options: ["Bayt", "Bit", "Bit va bayt"],
-  // },
+  {
+    question: "Excelda Eng kichik qiymatni topish funksiyasi qaysi?",
+    answer: "MIN()",
+    options: ["MIN()", "MAX()", "SUMM()"],
+  },
   {
     question: "Kompyuterni jami nechta o’chirish usuli mavjud ?",
     answer:
@@ -168,6 +275,15 @@ let questions = [
     ],
   },
   {
+    question: "Excelda Jadvalga filter qo‘shish uchun qaysi buyruq ishlatiladi?",
+    answer: "Фильтр",
+    options: [
+      "Фильтр",
+      "Сортировка",
+      "Очистить",
+    ],
+  },
+  {
     numb: 23,
     question: "Printer bu-?",
     answer: "Raqamli axborotlarni chop etuvchi qurulma",
@@ -186,12 +302,12 @@ let questions = [
       "Rasmlarni raqamlashtiradigan qurulma",
     ],
   },
-  // {
-  //   question:
-  //     "O‘zi nomi, kengaytmasi va hajmiga ega bo‘lgan u yoki bu turdagi axborotlarni o‘zida jamlagan ob’ekt qanday nomlanadi?",
-  //   answer: "Fayl",
-  //   options: ["Fayl", "Papka", "Yorliq"],
-  // },
+  {
+    question:
+      "Excelda raqamlarni o‘rtacha qiymatini topish funksiyasi qaysi?",
+    answer: "СРЗНАЧ",
+    options: ["СРЗНАЧ", "Очистить", "МИН"],
+  },
   // {
   //   question:
   //     "Diskda o‘z nomiga ega bo‘lgan va o‘zida turli fayl obyektlarini va yorliqlarni jamlagan obyekt qanday nomlanadi?",
@@ -214,12 +330,12 @@ let questions = [
     answer: "Delete",
     options: ["End", "F8", "Delete"],
   },
-  // {
-  //   question:
-  //     "Bir guruh fayllar va papkalarni ketma-ket belgilash uchun klaviaturaning qaysi tugmasidan foydalaniladi?",
-  //   answer: "Shift",
-  //   options: ["Esc", "Enter", "Shift"],
-  // },
+  {
+    question:
+      "Windows + V qaysi amalni bajaradi?",
+    answer: "Bufer (Clipboard History) ni ochadi",
+    options: ["Bufer (Clipboard History) ni ochadi", "Saqlaydi", "Hyperlink qo‘shadi"],
+  },
   {
     question:
       "Odatda Korzinadan obyektlarni tiklash jarayonida obyektlar qayerga tiklanadi?",
@@ -231,28 +347,28 @@ let questions = [
     ],
   },
 
-  // {
-  //   question:
-  //     "Qaysi tugmalar birikmasi yordamida ob’ektlar almashish buferiga kesib olinadi",
-  //   answer: "Ctrl+X",
-  //   options: ["Ctrl+C", "Ctrl+X", "Alt+C"],
-  // },
+  {
+    question:
+      "Windows + . qanday amal?",
+    answer: "Emoji va smayliklar panelini ochish uchun",
+    options: ["Screenshot oladi", "Emoji va smayliklar panelini ochish uchun", "Yangi fayl ochadi"],
+  },
   {
     question:
       "Axborotlarni ekranda tasvirlash xususiyatiga ega bo‘lgan qurilmani ko‘rsating.",
     answer: "Monitor",
     options: ["Modem", "Skaner", "Monitor"],
   },
-  // {
-  //   question: "Quyidagilardan qaysi biri grafik muharrir?",
-  //   answer: "PAINT",
-  //   options: ["BASIC", "PAINT", "EXCEL"],
-  // },
-  // {
-  //   question: "Bir bayt necha bitga teng?",
-  //   answer: "8",
-  //   options: ["2", "8", "10"],
-  // },
+  {
+    question: "Ctrl + P nima qiladi?",
+    answer: "Chop etish oynasini ochadi",
+    options: ["Palatino shrifti", "Chop etish oynasini ochadi", "Saxranit oynasini ochadi"],
+  },
+  {
+    question: "Ctrl + Y qanday amal bajaradi?",
+    answer: "Oldinga qaytarish",
+    options: ["Oldinga qaytarish", "Orqaga qaytarish", "Saqlash"],
+  },
   // {
   //   question: "Kompyuterni yig‘ishda protsessor qaysi qurilmaga mahkamlanadi?",
   //   answer: "Asosiy (ona) plataga",
@@ -345,11 +461,20 @@ let questions = [
     answer: "Windows",
     options: ["Office 365", "Windows", "Unit"],
   },
-  // {
-  //   question: "2 x 2 K bayt necha kbaytga teng bo’ladi?",
-  //   answer: "4096 bayt",
-  //   options: ["4096 bayt", "2048 bayt ", "1024 bayt "],
-  // },
+  {
+    question: "Wordda paragraf oldi masofasi qaysi bo‘limda sozlanadi?",
+    answer: "Разметка страницы → Абзац",
+    options: [
+      "Вставка → Иллюстрация",
+      "Разметка страницы → Абзац",
+      "Главная → Шрифт",
+    ],
+  },
+  {
+    question: "Faylni PDF formatida saqlash qaysi bo‘limda?",
+    answer: "Файл → Сохранить как",
+    options: ["Файл → Сохранить как", "Главная → Экспорт", "Вставка → Объект"],
+  },
   // {
   //   question:
   //     "Windows oynalaridagi <img src='imgr.jpg' alt='thank'> piktogram-malar nima uchun xizmat qiladi?",
@@ -426,16 +551,16 @@ let questions = [
   //     "Chap tugma bilan ikki marta bosish",
   //   ],
   // },
-  // {
-  //   question:
-  //     "Microsoft Excel jadvallarida quyidagi amallarning qaysi birining natijasida YOLG‘ON qiymati hosil bo‘ladi",
-  //   answer: "=“Shahar” < “Respublika”",
-  //   options: [
-  //     "=12 < 23",
-  //     "=“Shahar” < “Respublika”",
-  //     "=“Respublika” < “Shahar”",
-  //   ],
-  // },
+  {
+    question:
+      "Excel’dagi formulalar qaysi belgi bilan boshlanadi?",
+    answer: "=",
+    options: [
+      "=",
+      "+",
+      "#",
+    ],
+  },
   {
     question: "Microsoft Excel – bu:",
     answer: "Elektron jadval muxarriri",
@@ -467,16 +592,16 @@ let questions = [
     answer: "1",
     options: ["1", "3", "2"],
   },
-  // {
-  //   question:
-  //     "Microsoft Excel jadvallarida ustun sarlavhasiga sichqoncha ko‘rsatkichi bilan bosilsa nima sodir bo‘ladi",
-  //   answer: "Ustun faollashadi",
-  //   options: [
-  //     "Kursor tanlangan ustunga o‘rnatiladi",
-  //     "Ustun faollashadi",
-  //     "Ustun to‘liq belgilanadi",
-  //   ],
-  // },
+  {
+    question:
+      "Jadvaldagi raqamlarni yig‘indisini hisoblash uchun qaysi funksiya ishlatiladi?",
+    answer: "СУММ()",
+    options: [
+      "ЕСЛИ()",
+      "СУММ()",
+      "МАКС()",
+    ],
+  },
   {
     question:
       "Microsoft Excel jadvallarida satr tartib raqamiga (satr nomiga) sichqoncha ko‘rsatkichi bilan bosilsa nima sodir bo‘ladi",
@@ -504,29 +629,29 @@ let questions = [
     answer: "http://www.abt.uz",
     options: ["www://http. abt.uz", "http://www.abt.uz", "test.abt:uz"],
   },
-  // {
-  //   question:
-  //     "Internet tarmog‘idagi qidiruv tizimlarining vazifasini ko‘rsating.",
-  //   answer:
-  //     "Qidiruv tizimi bu Internet tarmogida ma’lumotlarni qidirish imkoniyatini beradi",
-  //   options: [
-  //     "Qidiruv tizimi bu Internet tarmogida ma’lumotlarni qidirish imkoniyatini beradi",
-  //     "Qidiruv tizimi- bu Internet tarmogida ma’lumotlarni saqlash imkoniyatini beradi",
-  //     "Qidiruv tizimi-bu Internet tarmogida ma’lumotlarni bosmaga chiqarish imkoniyatini beradi",
-  //   ],
-  // },
+  {
+    question:
+      "Excelda Diagramma yaratish uchun qaysi menyu bo‘limiga murojaat qilinadi?",
+    answer:
+      "Вставка",
+    options: [
+      "Главная",
+      "Вставка",
+      "Вид",
+    ],
+  },
   // {
   //   question:
   //     "Biror bir sohaga, faoliyatga, voqea va xodisaga bag‘ishlangan ma’lumotlarni o‘zida jamlagan Internet sahifalar majmui qanday ataladi?",
   //   answer: "Veb-sayt",
   //   options: ["Gipermatn", "Veb hujjat", "Veb-sayt"],
   // },
-  // {
-  //   question:
-  //     "Quyidagi texnologiyalarning qaysi birlari orqali Internet tarmog‘iga simsiz ulanish mumkin",
-  //   answer: "WiFi, WiMax",
-  //   options: ["Bluetooth", "WiFi, WiMax", "Dial-UP"],
-  // },
+  {
+    question:
+      "“Сохранить как…” buyrug‘i nima uchun ishlatiladi?",
+    answer: "Hujjatni yangi nom bilan saqlash",
+    options: ["Bluetooth", "Hujjatni yangi nom bilan saqlash", "Hujjatni chop etish"],
+  },
   {
     question:
       "Internet tarmog‘i orqali elektron xabarlarni uzatish va qabul qilish texnologiyasi va u orqali taqdim qilinadigan xizmati turi qanday ataladi?",
@@ -544,15 +669,15 @@ let questions = [
     answer: "Global tarmoq",
     options: ["Lokal tarmoq", "Global tarmoq", "Mahalliy tarmoq"],
   },
-  // {
-  //   question:
-  //     "Internet tarmog‘i orqali ko‘rsatiladigan elektron pochta xizmati qanday ataladi?",
-  //   answer: "E-mail",
-  //   options: ["E-mail", "TSR", "HTML"],
-  // },
-  // {
-  //   question: "Quyidagi dasturlarning qaysi biri Veb-brauzer hisoblanmaydi?",
-  //   answer: "Outlook Express",
-  //   options: ["Google Chrome", "Firefox Mozilla", "Outlook Express"],
-  // },
+  {
+    question:
+      "Matn oralig‘ini (интервал) o‘zgartirish qayerdan amalga oshiriladi? ",
+    answer: "Главная",
+    options: ["Главная", "Вставка", "Рецензирование"],
+  },
+  {
+    question: "Word’da rasm qo‘shish qaysi bo‘lim orqali amalga oshiriladi?",
+    answer: "Вставка Рисунки",
+    options: ["Вставка Рисунки", "Главная", "Разметка страницы"],
+  },
 ];
