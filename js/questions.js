@@ -87,9 +87,21 @@ let questions = [
   },
   {
     question:
+      "Internet brauzeri deganda nima tushuniladi?",
+    answer: "Google Chrome, Yandex",
+    options: ["Word, Excel", "Google Chrome, Yandex", "Windows"],
+  },
+  {
+    question:
       "Excel’da qator va ustun kesishgan joy qanday ataladi?",
     answer: "Ячейка",
     options: ["Ячейка", "Строка", "Столбец"],
+  },
+  {
+    question:
+      "Virus nima?",
+    answer: "Zararli dastur",
+    options: ["Zararli dastur", "Qurilma", "Foydali dastur"],
   },
   {
     question:
@@ -137,6 +149,11 @@ let questions = [
     question: "Matnni xotirada saqlash qanday yo`l bilan amalga oshiriladi?",
     answer: "Fayl - Soxranit",
     options: ["Fayl - Zakrit", "Fayl - Soxranit", "Fayl – Pechat"],
+  },
+  {
+    question: "Doimiy xotirada “SSD” va “HDD” qanday farq qiladi?",
+    answer: "SSD tezroq, HDD arzonroq va sig‘imi kattaroq bo‘ladi",
+    options: ["SSD tezroq, HDD arzonroq va sig‘imi kattaroq bo‘ladi", "SSD arzonroq, HDD tezroq va sig‘imi kattaroq bo‘ladi", "SSD va HDD o‘rtasida farq yo‘q"],
   },
   {
     question:
@@ -196,6 +213,15 @@ let questions = [
     ],
   },
   {
+    question: "Operatsion tizim (OS) nima uchun kerak?",
+    answer: "Kompyuterni boshqarish va dasturlarni ishga tushirish uchun",
+    options: [
+      "Kompyuterni boshqarish va dasturlarni ishga tushirish uchun",
+      "Fayllarni boshqarish uchun",
+      "Internetga ulanish uchun",
+    ],
+  },
+  {
     question: "Windows + Shift + S nima qiladi?",
     answer: "Ekranning tanlangan qismini skrinshotga olish",
     options: [
@@ -209,6 +235,12 @@ let questions = [
       "Matnni yozayotganda keyingi satrga o’tish uchun qaysi tugmachadan foydalaniladi?",
     answer: "Enter",
     options: ["Tab", "Enter", "Alt"],
+  },
+  {
+    question:
+      "RAM nima ?",
+    answer: "Tezkor xotira",
+    options: ["Tezkor xotira", "Doimiy xotira", "Fayl tizimi"],
   },
   {
     question:
@@ -241,6 +273,15 @@ let questions = [
     ],
   },
   {
+    question: "(Корзина) nima?",
+    answer: "o'chirilgan fayllarni vaqtincha saqlash joyi",
+    options: [
+      "o'chirilgan fayllarni vaqtincha saqlash joyi",
+      "fayllarni doimiy saqlash joyi",
+      "fayllarni zaxira nusxasini saqlash joyi",
+    ],
+  },
+  {
     question: "Excelda Eng kichik qiymatni topish funksiyasi qaysi?",
     answer: "MIN()",
     options: ["MIN()", "MAX()", "SUMM()"],
@@ -263,6 +304,16 @@ let questions = [
       "Word dasturi bilan",
       "Excel dasturi bilan",
       "Operatsion tizim bilan",
+    ],
+  },
+  {
+    question:
+      "Antivirus nima?",
+    answer: "Viruslardan himoya qiluvchi dastur",
+    options: [
+      "O'yin dasturi",
+      "Virus tarqatuvchi dastur",
+      "Viruslardan himoya qiluvchi dastur",
     ],
   },
   {
@@ -305,25 +356,31 @@ let questions = [
   {
     question:
       "Excelda raqamlarni o‘rtacha qiymatini topish funksiyasi qaysi?",
-    answer: "СРЗНАЧ",
-    options: ["СРЗНАЧ", "Очистить", "МИН"],
+    answer: "СРЗНАЧ()",
+    options: ["СРЗНАЧ()", "Очистить", "МИН()"],
   },
-  // {
-  //   question:
-  //     "Diskda o‘z nomiga ega bo‘lgan va o‘zida turli fayl obyektlarini va yorliqlarni jamlagan obyekt qanday nomlanadi?",
-  //   answer: "Papka",
-  //   options: ["Papka", "Fayl", "Yorliq"],
-  // },
-  // {
-  //   question:
-  //     "Ctrl+Shift yoki Alt+Shift tugmalar birikmasi qanday vazifani bajaradi?",
-  //   answer: "Klaviatura kiritish tilini almashtiradi",
-  //   options: [
-  //     "Matnlarni bir tildan boshqasiga o‘giradi",
-  //     "Sichqoncha ko‘rsatkichini o‘zgartiradi",
-  //     "Klaviatura kiritish tilini almashtiradi",
-  //   ],
-  // },
+  {
+    question:
+      "Excel fayllari qanday kengaytmaga ega?",
+    answer: ".xlsx",
+    options: [".xlsx", ".docx", ".pptx"],
+  },
+  {
+    question:
+      "PowerPoint fayllari qanday kengaytmaga ega?",
+    answer: ".pptx",
+    options: [".xlsx", ".docx", ".pptx"],
+  },
+  {
+    question:
+      "Kompyuterni bloklash tugmasi ?",
+    answer: "Windows + L",
+    options: [
+      "Windows + D",
+      "Windows + L",
+      "Windows + V",
+    ],
+  },
   {
     question:
       "Klaviaturaning qaysi tugmasi yordamida obyektlarni o‘chirish mumkin?",
@@ -355,6 +412,12 @@ let questions = [
   },
   {
     question:
+      "Excelda  ЕСЛИ() funksiyasi nima uchun ishlatiladi?",
+    answer: "Shartni tekshiradi va natujaga ko‘ra turli qiymat qaytaradi",
+    options: [" Tanlangan oraliqda nechta son borligini hisoblaydi", "Shartni tekshiradi va natujaga ko‘ra turli qiymat qaytaradi", "Shartga mos keluvchi nechta qiymat borligini hisoblaydi."],
+  },
+  {
+    question:
       "Axborotlarni ekranda tasvirlash xususiyatiga ega bo‘lgan qurilmani ko‘rsating.",
     answer: "Monitor",
     options: ["Modem", "Skaner", "Monitor"],
@@ -369,22 +432,28 @@ let questions = [
     answer: "Oldinga qaytarish",
     options: ["Oldinga qaytarish", "Orqaga qaytarish", "Saqlash"],
   },
-  // {
-  //   question: "Kompyuterni yig‘ishda protsessor qaysi qurilmaga mahkamlanadi?",
-  //   answer: "Asosiy (ona) plataga",
-  //   options: ["Asosiy (ona) plataga", "Elektr manba blokiga", "Vinchesterga"],
-  // },
-  // {
-  //   question:
-  //     "Belgisi ish stolida joylashgan dasturni qanday ishga tushirish mumkin?",
-  //   answer:
-  //     "dastur belgisi ustida sichqonchaning chap klavishasini ikki marta bosish bilan",
-  //   options: [
-  //     "dastur belgisi ustida sichqonchaning chap klavishasini ikki marta bosish bilan",
-  //     "dastur belgisi ustida sichqonchaning chap klavishasini bir marta bosish bilan",
-  //     "dastur belgisi ustida sichqonchaning o`ng klavishasini ikki marta bosish bilan",
-  //   ],
-  // },
+  {
+    question: "Kompyuter necha qismdan tashkil topgan?",
+    answer: "Software va Hardware",
+    options: ["Software va Hardware", "Monitor, Sichqoncha, Klaviatura, Protsessor", "Operatsion tizim va Dasturlar"],
+  },
+  {
+    question:
+      "Belgisi ish stolida joylashgan dasturni qanday ishga tushirish mumkin?",
+    answer:
+      "dastur belgisi ustida sichqonchaning chap klavishasini ikki marta bosish bilan",
+    options: [
+      "dastur belgisi ustida sichqonchaning chap klavishasini ikki marta bosish bilan",
+      "dastur belgisi ustida sichqonchaning chap klavishasini bir marta bosish bilan",
+      "dastur belgisi ustida sichqonchaning o`ng klavishasini ikki marta bosish bilan",
+    ],
+  },
+   {
+    question:
+      "Excelda  СЧЁТЕСЛИ() funksiyasi nima uchun ishlatiladi?",
+    answer: "Shartga mos keluvchi nechta qiymat borligini hisoblaydi.",
+    options: [" Tanlangan oraliqda nechta son borligini hisoblaydi", "Shartni tekshiradi va natujaga ko‘ra turli qiymat qaytaradi", "Shartga mos keluvchi nechta qiymat borligini hisoblaydi."],
+  },
   {
     question: "Windowsda turib kompyuterni qanday to`g`ri o`chirish kerak? ",
     answer:
@@ -414,11 +483,12 @@ let questions = [
       "pochta va faks xabarlarni saqlash uchun",
     ],
   },
-  // {
-  //   question: "Faol va faol bo`lmagan oynalarni qanday ajratish mumkin?",
-  //   answer: "oyna o`lchamidan",
-  //   options: ["oyna o`lchamidan", "oynadagi matndan", "oyna nomining rangidan"],
-  // },
+   {
+    question:
+      "Excelda  СУММЕСЛИ() funksiyasi nima uchun ishlatiladi?",
+    answer: "Shartga mos keladigan qiymatlarni yig‘adi.",
+    options: [" Tanlangan oraliqda nechta son borligini hisoblaydi", "Shartga mos keladigan qiymatlarni yig‘adi.", "Shartga mos keluvchi nechta qiymat borligini hisoblaydi."],
+  },
   {
     numb: 41,
     question:
@@ -426,15 +496,15 @@ let questions = [
     answer: "Nayti",
     options: ["Dokumenti", "Spravka", "Nayti"],
   },
-  // {
-  //   question: "Grafik muharrirlar qanday dastur?",
-  //   answer: "grafik tasvirlar bilan ishlash",
-  //   options: [
-  //     "matnning grafikdagi aksini hosil qilish",
-  //     "shriftning ko`rinishi va shaklini tahrir qilish",
-  //     "grafik tasvirlar bilan ishlash",
-  //   ],
-  // },
+  {
+    question: "Dunyoda eng ko'p tarqalgan ( OS ) turlari qaysilar?",
+    answer: "Windows, MacOS, Linux",
+    options: [
+      "Windows, MacOS, Linux",
+      "MacOS, Ubuntu, Chrome OS",
+      "Windows, Chrome OS, Ubuntu",
+    ],
+  },
   // {
   //   question: "Paint grafik muharriri yordamida … mumkin",
   //   answer: "grafik tasvir yasash va tahrir qilish",
@@ -451,6 +521,12 @@ let questions = [
   //   answer: "0 va 1",
   //   options: ["0 va 1", "0,1, ... .., 10", "0,1, ...., 8"],
   // },
+   {
+    question:
+      "Excelda  СЧЁТ() funksiyasi nima uchun ishlatiladi?",
+    answer: "Tanlangan oraliqda nechta son borligini hisoblaydi",
+    options: [" Tanlangan oraliqda nechta son borligini hisoblaydi", "Shartni tekshiradi va natujaga ko‘ra turli qiymat qaytaradi", "Shartga mos keluvchi nechta qiymat borligini hisoblaydi."],
+  },
   {
     question: "1 Mbayt necha Kbaytni tashkil yetadi?",
     answer: "1024 Kbaytni",
@@ -506,15 +582,15 @@ let questions = [
     answer: "Keragicha",
     options: ["40 ta", "3 ta ", "Keragicha"],
   },
-  // {
-  //   question: "“Print Screen” klavishini vazifasi?",
-  //   answer: "Monitordagi ko‘rinishni xotiraga oladi",
-  //   options: [
-  //     "Monitordagi ko‘rinishni xotiraga oladi",
-  //     "Amalni bajarilishini ma’lum vaqtga to‘xtatadi",
-  //     "Harf yoki belgini almashtiradi",
-  //   ],
-  // },
+  {
+    question: "Alt + F4 tugmasining vazifasi ?",
+    answer: "Kompyuteri o'chirish va chiqish",
+    options: [
+      "Kompyuteri o'chirish va chiqish",
+      "Kompyuteri yoqish va chiqish",
+      "Kompyuteri yangilash va chiqish",
+    ],
+  },
   {
     question: "Operatsion sistema nima?",
     answer: "kompyuterni ishga tushiruvchi dastur",
@@ -529,28 +605,28 @@ let questions = [
   //   answer: "Tab",
   //   options: ["Shift", "Tab", "Caps lock"],
   // },
-  // {
-  //   question:
-  //     "Agar tayyorlangan jadval yuqorisiga satr qo’shish kerak bo’lsa, qaysi amal bajariladi: Sichqonchaning o’ng tugmasi-Вставка-…",
-  //   answer: "Satr bo‘yi",
-  //   options: ["Satr yuqoriga", "Satr eniga", "Satr bo‘yi"],
-  // },
+  {
+    question:
+      "Agar excelda tayyorlangan jadval yuqorisiga qator qo’shish kerak bo’lsa, qaysi amal bajariladi ?",
+    answer: "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Vstavit” buyrug’i tanlanadi",
+    options: [" Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Удалить” buyrug’i tanlanadi", "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Копировать” buyrug’i tanlanadi", "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Вставить” buyrug’i tanlanadi"],
+  },
   {
     question:
       "Microsoft Excel dasturida yangi hujjat yaratilganda, odatda avtomatik ravishda dastur tomonidan unga qanday nom beriladi",
     answer: "“Листы 1”",
     options: ["“Документ 1”", "“Листы 1”", "“Книга 1”"],
   },
-  // {
-  //   question:
-  //     "Microsoft Excel jadvallarida sichqonchaning qaysi harakati katakka o‘zgartirish kiritish imkonini beradi",
-  //   answer: "Chap tugma bilan ikki marta bosish",
-  //   options: [
-  //     "O‘ng tugma bilan ikki marta bosish",
-  //     "O‘ng tugma bilan bir marta bosish",
-  //     "Chap tugma bilan ikki marta bosish",
-  //   ],
-  // },
+  {
+    question:
+      "Microsoft Excel jadvallarida sichqonchaning qaysi harakati katakka o‘zgartirish kiritish imkonini beradi",
+    answer: "Chap tugma bilan ikki marta bosish",
+    options: [
+      "O‘ng tugma bilan ikki marta bosish",
+      "O‘ng tugma bilan bir marta bosish",
+      "Chap tugma bilan ikki marta bosish",
+    ],
+  },
   {
     question:
       "Excel’dagi formulalar qaysi belgi bilan boshlanadi?",
@@ -623,11 +699,21 @@ let questions = [
     ],
   },
   {
+    question:
+      "Sun’iy intellekt (AI) nima?",
+    answer: "Dasturlarni insonga xos fikrlash va qaror qabul qilish qobiliyati",
+    options: [
+      "Dasturlarni insonga xos fikrlash va qaror qabul qilish qobiliyati",
+      "Dasturlarni tezlashtirish va samaradorligini oshirish",
+      "Dasturlarni avtomatlashtirish va boshqarish",
+    ],
+  },
+  {
     numb: 66,
     question:
       "Qaysi javobda veb resurslarning URL manzili to‘g‘ri ko‘rsatilgan",
     answer: "http://www.abt.uz",
-    options: ["www://http. abt.uz", "http://www.abt.uz", "test.abt:uz"],
+    options: ["www://http.diyorcoder.uz", "http://www.diyorcoder.uz", "diyorcoder:uz"],
   },
   {
     question:
@@ -640,12 +726,12 @@ let questions = [
       "Вид",
     ],
   },
-  // {
-  //   question:
-  //     "Biror bir sohaga, faoliyatga, voqea va xodisaga bag‘ishlangan ma’lumotlarni o‘zida jamlagan Internet sahifalar majmui qanday ataladi?",
-  //   answer: "Veb-sayt",
-  //   options: ["Gipermatn", "Veb hujjat", "Veb-sayt"],
-  // },
+  {
+    question:
+      "Ctrl + B qanday amal bajaradi?",
+    answer: "Matnni qalin qilish",
+    options: ["Matnni qalin qilish", "Matnni qiya qilish", "Matnni ostiga chizish"],
+  },
   {
     question:
       "“Сохранить как…” buyrug‘i nima uchun ishlatiladi?",
@@ -657,6 +743,12 @@ let questions = [
       "Internet tarmog‘i orqali elektron xabarlarni uzatish va qabul qilish texnologiyasi va u orqali taqdim qilinadigan xizmati turi qanday ataladi?",
     answer: "Elektron pochta",
     options: ["Elektron pochta", "Chat", "WWW"],
+  },
+  {
+    question:
+      "Ctrl + I qanday amal bajaradi?",
+    answer: "Matnni qiya qilish",
+    options: ["Matnni qiya qilish", "Matnni qalin qilish", "Matnni ostiga chizish"],
   },
   {
     question:
@@ -679,5 +771,10 @@ let questions = [
     question: "Word’da rasm qo‘shish qaysi bo‘lim orqali amalga oshiriladi?",
     answer: "Вставка Рисунки",
     options: ["Вставка Рисунки", "Главная", "Разметка страницы"],
+  },
+  {
+    question: "Power Point dasturining asosiy vazifasi nima?",
+    answer: "Prezentatsiya tayyorlash",
+    options: ["Prezentatsiya tayyorlash", "Rasm chizish", "Matn yozish"],
   },
 ];
