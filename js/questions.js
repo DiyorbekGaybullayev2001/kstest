@@ -608,8 +608,10 @@ let questions = [
   {
     question:
       "Agar excelda tayyorlangan jadval yuqorisiga qator qo’shish kerak bo’lsa, qaysi amal bajariladi ?",
-    answer: "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Vstavit” buyrug’i tanlanadi",
-    options: [" Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Удалить” buyrug’i tanlanadi", "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Копировать” buyrug’i tanlanadi", "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Вставить” buyrug’i tanlanadi"],
+    answer: "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Вставить” buyrug’i tanlanadi",
+    options: [" Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Удалить” buyrug’i tanlanadi",
+      "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Копировать” buyrug’i tanlanadi",
+      "Qator nomi ustida o’ng tugma bosiladi va paydo bo’lgan menyudan “Вставить” buyrug’i tanlanadi"],
   },
   {
     question:
@@ -712,7 +714,7 @@ let questions = [
     numb: 66,
     question:
       "Qaysi javobda veb resurslarning URL manzili to‘g‘ri ko‘rsatilgan",
-    answer: "http://www.abt.uz",
+    answer: "http://www.diyorcoder.uz",
     options: ["www://http.diyorcoder.uz", "http://www.diyorcoder.uz", "diyorcoder:uz"],
   },
   {
