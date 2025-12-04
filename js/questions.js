@@ -525,7 +525,7 @@ let questions = [
     question:
       "Excelda  СЧЁТ() funksiyasi nima uchun ishlatiladi?",
     answer: "Tanlangan oraliqda nechta son borligini hisoblaydi",
-    options: [" Tanlangan oraliqda nechta son borligini hisoblaydi", "Shartni tekshiradi va natujaga ko‘ra turli qiymat qaytaradi", "Shartga mos keluvchi nechta qiymat borligini hisoblaydi."],
+    options: ["Tanlangan oraliqda nechta son borligini hisoblaydi", "Shartni tekshiradi va natujaga ko‘ra turli qiymat qaytaradi", "Shartga mos keluvchi nechta qiymat borligini hisoblaydi."],
   },
   {
     question: "1 Mbayt necha Kbaytni tashkil yetadi?",
